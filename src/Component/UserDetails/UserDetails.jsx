@@ -4,6 +4,7 @@ import { useColor } from "../../context/ColorContext";
 export default function UserDetails({ user }) {
   const { color, changeColor } = useColor();
   const { id, firstName, lastName, image, email, phone, birthDate, university } = user;
+  console.log("bg-${color}", `bg-${color}`);
   return (
     <div
       onClick={changeColor}
@@ -16,7 +17,7 @@ export default function UserDetails({ user }) {
       <span className="text-sm text-gray-500 dark:text-gray-400">Date Of Birth : {birthDate}</span>
       <span className="text-sm text-gray-500 dark:text-gray-400">university : {university}</span>
       <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-4">
-        Toggle Color
+        Toggle Color {color}
       </button>
     </div>
   );
