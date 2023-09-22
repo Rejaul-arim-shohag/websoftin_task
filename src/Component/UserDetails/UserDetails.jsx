@@ -8,7 +8,7 @@ export default function UserDetails({ user }) {
   return (
     <div
       onClick={changeColor}
-      className={`lg:w-1/3 md:w-1/3 w-full mx-auto rounded-lg bg-${color} p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 flex flex-col items-center justify-center`}
+      className={`lg:w-1/3 md:w-1/3 w-full mx-auto rounded-lg  p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 flex flex-col items-center justify-center`}
     >
       <img className="w-36 h-36 mb-3 rounded-full shadow-lg" src={image} alt="User" />
       <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Name : {`#${id}:${firstName} ${lastName}`}</h5>
