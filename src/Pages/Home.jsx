@@ -10,7 +10,11 @@ export default function Home() {
     dispatch(fetchUsers);
   }, [dispatch]);
   if (loading) {
-    return <p>Loading...</p>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <img src="/Spinner-3.gif" />
+      </div>
+    );
   }
 
   return (
